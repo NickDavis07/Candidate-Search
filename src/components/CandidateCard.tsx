@@ -6,6 +6,7 @@ interface CandidateCardProps {
 }
 
 const CandidateCard: React.FC<CandidateCardProps> = ({ candidate }) => {
+  console.log('CandidateCard Props:', candidate); // Debugging line
   return (
     <div className="candidate-card">
       <img src={candidate.avatar_url} alt={`${candidate.name}'s avatar`} />

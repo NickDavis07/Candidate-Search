@@ -12,12 +12,14 @@ const searchGithub = async () => {
     );
     // console.log('Response:', response);
     const data = await response.json();
+    console.log('GitHub API Response:', data); // Debugging line
     if (!response.ok) {
       throw new Error('invalid API response, check the network tab');
     }
     // console.log('Data:', data);
     return data;
   } catch (err) {
+    console.error('API Error:', err);
     // console.log('an error occurred', err);
     return [];
   }
