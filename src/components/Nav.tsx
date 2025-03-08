@@ -4,34 +4,25 @@ const Nav = () => {
   const currentPage = useLocation().pathname;
 
   return (
-    <nav>
-      <h1>
-        <Link to='/' id='logo'>
-          Candidate Search
-        </Link>
-      </h1>
-      <ul className='nav nav-tabs'>
-        <li className='nav-item'>
-          <h2>
-            <Link
-              to='/'
-              className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-            >
-              Candidate Search
-            </Link>
-          </h2>
+    <nav className="nav">
+      <ul className="nav-tabs">
+        <li className="nav-item">
+          <Link
+            to="/"
+            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          >
+            Candidate Search
+          </Link>
         </li>
-        <li className='nav-item'>
-          <h2>
-            <Link
-              to='/SavedCandidates'
-              className={
-                currentPage === '/SavedCandidates' ? 'nav-link active' : 'nav-link'
-              }
-            >
-              Potential Candidates
-            </Link>
-          </h2>
+        <li className="nav-item">
+          <Link
+            to="/SavedCandidates"
+            className={
+              currentPage === '/SavedCandidates' ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Potential Candidates
+          </Link>
         </li>
       </ul>
     </nav>

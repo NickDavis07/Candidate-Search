@@ -98,20 +98,30 @@ tbody tr:nth-child(odd) {
   display: flex;
   justify-content: flex-start;
   padding: 1em 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
-  padding: 0 0.5rem;
-  list-style: none;
+  margin-right: 1em;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
+  font-size: 1.0em; /* Smaller text */
 }
 
-.active {
-  font-weight: 700;
+.nav-link.active {
+  font-weight: bold;
 }
 
 .table {
