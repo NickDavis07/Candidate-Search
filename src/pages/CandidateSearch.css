@@ -1,0 +1,70 @@
+.candidate-search {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.candidate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.candidate-card {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.candidate-avatar {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.candidate-info {
+  margin-top: 10px;
+}
+
+.candidate-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.candidate-info p {
+  margin: 5px 0;
+}
+
+.candidate-info a {
+  color: #646cff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex; /* Add flexbox properties */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 50%;
+  border: none;
+  width: 60px; /* Ensure equal width and height */
+  height: 60px; /* Ensure equal width and height */
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.button.minus {
+  background-color: red;
+}
+
+.button.plus {
+  background-color: green;
+}
