@@ -8,3 +8,4 @@ export interface Candidate {
     company: string;
     html_url: string;
 }
+
