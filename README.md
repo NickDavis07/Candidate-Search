@@ -4,6 +4,9 @@
 
 The Candidate Search Application allows users to search for GitHub users and view their details. Users can save potential candidates to a list or skip to the next candidate.
 
+![image](https://github.com/user-attachments/assets/327cb483-5e13-47b3-892f-644b8b349025)
+
+
 ## Features
 
 - Display candidate's name, username, location, avatar, email, html_url, and company.
