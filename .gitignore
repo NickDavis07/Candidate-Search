@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#prevent env from being uploaded to github
+.env
+.env.local
+.env.development.local
+.env.test.local 
