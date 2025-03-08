@@ -1,33 +1,102 @@
-# React + TypeScript + Vite
+# Candidate Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+The Candidate Search Application allows users to search for GitHub users and view their details. Users can save potential candidates to a list or skip to the next candidate.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Display candidate's name, username, location, avatar, email, html_url, and company.
+- Save candidates to a list of potential candidates.
+- Skip to the next candidate without saving.
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Live Site
 
-* Configure the top-level `parserOptions` property as follows:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/candidate-search-app.git
+   cd candidate-search-app
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Create an `.env` file in the `environment` folder and add your GitHub token:
+   ```env
+   VITE_GITHUB_TOKEN=your_github_token_here
+   ```
+
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+## Usage
+
+1. Open the application in your browser:
+   ```
+   http://localhost:5173/
+   ```
+
+2. The application will display a candidate's information.
+
+3. Click the "+" button to save the candidate and display the next candidate.
+
+4. Click the "-" button to skip to the next candidate without saving.
+
+## Project Structure
+
+```
+candidate-search-app/
+├── environment/
+│   └── .env
+├── public/
+│   └── index.html
+├── src/
+│   ├── api/
+│   │   └── API.tsx
+│   ├── components/
+│   │   ├── CandidateCard.tsx
+│   │   └── Nav.tsx
+│   ├── interfaces/
+│   │   └── Candidate.interface.tsx
+│   ├── pages/
+│   │   └── CandidateSearch.tsx
+│   ├── utils/
+│   │   └── localStorage.ts
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .gitignore
+├── package.json
+├── README.md
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## Contributing
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+1. Fork the repository.
+2. Create a new branch:
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them:
+   ```sh
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```sh
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
