@@ -12,5 +12,6 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: 3000, // You can specify the port you want to use
+    allowedHosts: ['candidate-search-czqt.onrender.com'], // Add your Render host here
   },  
 });
