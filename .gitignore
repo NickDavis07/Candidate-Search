@@ -28,3 +28,9 @@ dist-ssr
 .env.local
 .env.development.local
 .env.test.local 
+
+# Ignore .env files in the environment folder
+environment/.env
+environment/.env.local
+environment/.env.development.local
+environment/.env.test.local
