@@ -14,7 +14,7 @@ The Candidate Search Application allows users to search for GitHub users and vie
 - Skip to the next candidate without saving.
 
 ## Live Site
-
+https://candidate-search-czqt.onrender.com/
 
 ## Installation
 
